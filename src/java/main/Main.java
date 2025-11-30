@@ -14,8 +14,11 @@ public class Main {
             double marks=sc.nextDouble();
             students[i]=new Student(name,marks);
         }
+        double total =0;
         for(Student s: students){
+            total+=s.marks;
             System.out.println(s.toString());
         }
+        System.out.println("Total marks:"+total);
     }
 }
